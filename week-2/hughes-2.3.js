@@ -35,9 +35,6 @@ function myName() {
   Today's Date
 
   Hello Joshua Hughes!
-
-  Hint: Use your personal header display function and
-  refer to page 178 for implementing function properties
 */
 console.log("\nHello " + myName()+ "!");
 
