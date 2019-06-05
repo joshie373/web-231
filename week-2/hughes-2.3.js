@@ -1,11 +1,18 @@
 /*
 ============================================
-; Title:  hughes-header-test.js
+; Title:  hughes-2.3.js
 ; Author: Joshua Hughes
 ; Date:   04 June 2019
 ; Description: Demonstrates how to define and call function properties
 ;===========================================
 */
+
+//require header file
+const header = require('./hughes-header.js');
+
+//use header display function
+console.log(header.display("Joshua", "Hughes", "Exercise 2.3"));
+
 
 // function property definitions
 myName.josh = "Joshua Hughes";
@@ -20,4 +27,19 @@ function myName() {
 }
 
 //output
-console.log(myName());
+/*
+  Expected output:
+
+  Joshua Hughes
+  Exercise 2.3
+  Today's Date
+
+  Hello Joshua Hughes!
+
+  Hint: Use your personal header display function and
+  refer to page 178 for implementing function properties
+*/
+console.log("\nHello " + myName()+ "!");
+
+
+
