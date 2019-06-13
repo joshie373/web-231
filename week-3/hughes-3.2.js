@@ -65,7 +65,6 @@ function logMatch(param1,param2){
     "The value '"+param1+"' is the same as the value '"+param2+"'."
   );
   console.log("\n");//line break
-
 }
 
 //if..else statement
