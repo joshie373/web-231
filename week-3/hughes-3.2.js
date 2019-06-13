@@ -7,6 +7,17 @@
 ;===========================================
 */
 
+//===============header include======================
+//require header file
+const header = require('../hughes-header.js');
+
+//use header display function
+console.log(header.display("Joshua", "Hughes", "Assignment 3.2"));
+
+//line break
+console.log("\n");
+//===============header include======================
+
 //global variable definitions
 var
 test1 = "monkey",
