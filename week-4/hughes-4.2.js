@@ -3,7 +3,7 @@
 ; Title:  hughes-4.2.js
 ; Author: Joshua Hughes
 ; Date:   18 June 2019
-; Description: pattern matching functions
+; Description: defines and outputs an array
 ;===========================================
 */
 
