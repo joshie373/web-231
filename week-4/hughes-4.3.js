@@ -21,31 +21,36 @@ console.log("\n");
 //global variable definitions
 var vehicles = ["Car","Truck","Motorcycle","Boat","Train"];
 
-/**
- * Params: array, string
- * Response: elements of an array
- * Description:  iterates over the parameterized array
- * and outputs the results using the console.log() function.
- * also output filtered string if present
- */
-function getValue(array,string){
-  for (let i=0; i<array.length; i++){
-    if (!string) {
-      if(i==0){
-        console.log("-- DISPLAYING ARRAY ITEMS --");
-      }
-      console.log(array[i]);
-    }
-    else if(string==array[i]){
-      console.log("\n");
-      console.log("-- SELECTED VALUE --");
-      console.log(string);
-    }
 
-  }
+// output
+console.log("-- DISPLAYING ARRAY ITEMS --");
+for (let i = 0; i < vehicles.length; i++) {
+  console.log(vehicles[i]);
 }
 
-//outputs
-getValue(vehicles);
-getValue(vehicles,"Train");
-getValue(vehicles,"Truck");
+// new line
+console.log("\n");
+
+// output
+console.log(" -- SELECTED VALUE --");
+console.log(getValue(vehicles, "Train"));
+
+// new line
+console.log("\n");
+
+// output
+console.log(" -- SELECTED VALUE --");
+console.log(getValue(vehicles, "Truck"));
+
+/**
+ * Params: array, string
+ * Response: array element
+ * Description: Returns a filtered value from an array
+ */
+function getValue(array, string) {
+  for (let j = 0; j < array.length; j++) {
+    if (array[j] === string) {
+      return array[j];
+    }
+  }
+}
