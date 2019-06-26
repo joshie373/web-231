@@ -3,7 +3,7 @@
 ; Title:  hughes-5.2.js
 ; Author: Joshua Hughes
 ; Date:   26 June 2019
-; Description: defines and outputs an array
+; Description: further exhibits arrays and built in JS array functions
 ;===========================================
 */
 
