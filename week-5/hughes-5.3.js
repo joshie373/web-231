@@ -19,7 +19,7 @@ console.log("\n");
 //===============header include======================
 
 //global definitions
-//object-like array
+//array-like object
 var composers = [
   {
     firstName:  "Claude",
