@@ -1,6 +1,6 @@
 /*
 ============================================
-; Title:  hughes-5.2.js
+; Title:  hughes-6.2.js
 ; Author: Joshua Hughes
 ; Date:   3 July 2019
 ; Description: exception handling
@@ -28,9 +28,11 @@ try {
     if (isNaN(x)) throw 'NotaNumberException';
   
     // output
-    console.log(x + " " + y)
-  } catch (err) {
+    console.log(x);
+  } 
+catch (err) {
     console.log('Catch clause: ' + err)
-  } finally {
+  } 
+finally {
     console.log('Finally clause reached...')
   }
