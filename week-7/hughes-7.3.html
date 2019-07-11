@@ -1,0 +1,70 @@
+<!--
+============================================
+; Title:  hughes-7.3.html
+; Author: Joshua Hughes
+; Date:   10 July 2019
+; Description: Demonstrates client-side JavaScript
+;===========================================
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercise 7.3</title>
+  <link rel="stylesheet" href="../site.css">
+</head>
+<body>
+  <script>
+    document.write("<h1>SHOPPING LIST v.1</h1>")
+  </script>
+
+  <script>
+    document.write(
+      "<ol>"+
+        "<li>Meat</li>"+
+        "<li>Milk</li>"+
+        "<li>Eggs</li>"+
+        "<li>Bread</li>"+
+        "<li>Fruit</li>"+
+      "</ol>"
+    );
+  </script>
+
+<div id="list"></div>
+<script>
+    document.getElementById('list').innerHTML = "<h1>SHOPPING LIST v.2</h1>" +
+      "<table>" +
+        "<thead>" +
+          "<tr>" +
+            "<th>Id</th>" +
+            "<th>Item</th>" +
+          "</tr>" +
+        "</thead>" +
+        "<tbody>" +
+          "<tr>"+
+            "<td>1</td>"+
+            "<td>Meat</td>"+
+          "</tr>" +
+          "<tr>"+
+            "<td>2</td>"+
+            "<td>Milk</td>"+
+          "</tr>" +
+          "<tr>"+
+            "<td>3</td>"+
+            "<td>Eggs</td>"+
+          "</tr>" +
+          "<tr>"+
+            "<td>4</td>"+
+            "<td>Bread</td>"+
+          "</tr>" +
+          "<tr>"+
+            "<td>5</td>"+
+            "<td>Fruit</td>"+
+          "</tr>" +
+        "</tbody>" +
+      "</table>"
+  </script>
+
+</body>
+</html>
