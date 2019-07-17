@@ -1,0 +1,36 @@
+<!--
+============================================
+; Title:  hughes-8.1.html
+; Author: Joshua Hughes
+; Date:   17 July 2019
+; Description: Jquery errors
+;===========================================
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Discussion 8.1</title>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        </head>
+</head>
+<body>
+    <h1 id="header"></h1>
+    <p id="output"></p>
+</body>
+<script>
+    $("#id").text()="Joshua Hughes";
+    var head = {
+        assignment : "8.1",
+        dateSubmitted: "7/17/2019"
+    };
+    Object.entries(head).forEach(([key, value]) => {
+        "#output".append(key+" : "+value+"<br>");
+    });
+
+</script>
+</html>
