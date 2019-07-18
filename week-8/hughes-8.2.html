@@ -19,7 +19,7 @@
       margin: 0 auto;
       font-family: 'Roboto', sans-serif;
     }
-    #fruits::first-line {
+    nav {
       background-color: aquamarine;
     }
 
@@ -28,8 +28,9 @@
 </head>
 <body>
 
-<div id="fruits"></div>
-
+<div id="fruits">
+<nav>Fruits</nav>
+</div>
 <script>
   var fruits = [
     {
@@ -53,13 +54,12 @@
         "type": "watermelon",
     }
   ]
-  var out = "<ul>";
-  out += "<h2>Fruits</h2>";
+  var out = "<ul title='fruitsList'>";
   for (var x = 0; x < fruits.length; x++) {
     out += "<li>" + fruits[x].type + "</li>";
   }
   out += "</ul>";
-  document.getElementById("fruits").innerHTML= out;
+  document.getElementById("fruits").innerHTML += out;
 </script>
 
 </body>
