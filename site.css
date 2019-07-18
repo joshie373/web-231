@@ -25,3 +25,16 @@ th {
 tr:nth-child(even) {
   background-color: lightsteelblue;
 }
+
+nav {
+  background-color: aquamarine;
+}
+
+table[title='fruits'], p[title='paragraph']{
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
+}

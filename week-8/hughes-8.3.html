@@ -1,0 +1,71 @@
+<!--
+============================================
+; Title:  hughes-8.3.html
+; Author: Joshua Hughes
+; Date:   17 July 2019
+; Description: dynamic HTML
+;===========================================
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <title>Exercise 8.3</title>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="../site.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
+</head>
+<body>
+<nav><h1>8.3-Jquery stuff</h1></nav>
+<p title="paragraph">
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sit amet pretium lacus. Curabitur blandit nisi sed tortor convallis, malesuada congue nisi dignissim. Cras sit amet eros sit amet ipsum fringilla facilisis. Nam et tincidunt augue, facilisis efficitur quam. Proin egestas efficitur aliquet. In consequat turpis nec venenatis imperdiet. Maecenas feugiat ut dolor dignissim euismod. Aenean vestibulum bibendum nisi a fringilla.
+</p>
+<button title="toggle" name="toggle">Toggle Paragraph</button>
+<br><hr><br>
+<table title="fruits">
+  <tr>
+    <th>ID</th>
+    <th>Type</th>
+  </tr>
+  <tr>
+    <td class="id"><a href="">1</a></td>
+    <td class="type">Banana</td>
+  </tr>
+  <tr>
+    <td class="id"><a href="">2</a></td>
+    <td class="type">Pear</td>
+  </tr>
+  <tr>
+    <td class="id"><a href="">3</a></td>
+    <td class="type">Apple</td>
+  </tr>
+  <tr>
+    <td class="id"><a href="">4</a></td>
+    <td class="type">Grape</td>
+  </tr>
+  <tr>
+    <td class="id"><a href="">5</a></td>
+    <td class="type">Watermelon</td>
+  </tr>
+</table>
+<br><hr><br>
+<script type="text/javascript">
+  $("button[title|='toggle']").click(function(event){
+    event.preventDefault();
+    $("p[title|='paragraph'").toggle();
+  });
+
+  $("td[class|='id'").click(function(event){
+    event.preventDefault();
+    alert("id:   "+$(this).text()+"\n"+
+    "type:   "+$(this).closest("td").next().text()
+    )
+  });
+</script>
+
+</body>
+</html>
+
+
