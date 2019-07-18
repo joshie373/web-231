@@ -1,0 +1,66 @@
+<!--
+============================================
+; Title:  hughes-8.2.html
+; Author: Joshua Hughes
+; Date:   17 July 2019
+; Description: dynamic HTML
+;===========================================
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercise 8.2</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
+  <style type="text/css">
+    ul {
+      list-style: none;
+      margin: 0 auto;
+      font-family: 'Roboto', sans-serif;
+    }
+    #fruits::first-line {
+      background-color: aquamarine;
+    }
+
+  </style>
+
+</head>
+<body>
+
+<div id="fruits"></div>
+
+<script>
+  var fruits = [
+    {
+        "id": "1",
+        "type": "banana",
+    },
+    {
+        "id": "2",
+        "type": "apple",
+    },
+    {
+        "id": "3",
+        "type": "peach",
+    },
+    {
+        "id": "4",
+        "type": "cherry",
+    },
+    {
+        "id": "5",
+        "type": "watermelon",
+    }
+  ]
+  var out = "<ul>";
+  out += "<h2>Fruits</h2>";
+  for (var x = 0; x < fruits.length; x++) {
+    out += "<li>" + fruits[x].type + "</li>";
+  }
+  out += "</ul>";
+  document.getElementById("fruits").innerHTML= out;
+</script>
+
+</body>
+</html>
